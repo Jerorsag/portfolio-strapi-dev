@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_about_tech_categories",
+  "info": {
+    "displayName": "Tech Category",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "categoryName": {
+      "type": "string"
+    },
+    "technologies": {
+      "type": "component",
+      "repeatable": true,
+      "component": "project.stack-item"
+    },
+    "displayOrder": {
+      "type": "integer"
+    }
+  }
+}

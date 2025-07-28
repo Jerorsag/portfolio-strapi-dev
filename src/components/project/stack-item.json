@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_project_stack_items",
+  "info": {
+    "displayName": "Stack Item"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "icon": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

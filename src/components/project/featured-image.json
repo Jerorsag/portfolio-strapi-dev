@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_project_featured_images",
+  "info": {
+    "displayName": "Featured Image"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}
