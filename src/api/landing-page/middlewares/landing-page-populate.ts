@@ -31,7 +31,30 @@ const populate = {
           },
         },
       },
-      'blocks.project': true,
+      'blocks.project': {
+        populate: {
+          proyectos: {
+            populate: {
+              stackUsed: {
+                populate: {
+                  icon: {
+                    fields: ['alternativeText', 'url'],
+                  },
+                },
+              },
+              image: {
+                populate: {
+                  image: {
+                    fields: ['alternativeText', 'url'],
+                  },
+                },
+              },
+              linksProject: true
+            },
+          },
+        },
+      },
+      'blocks.contact': true,
     },
   },
 }

@@ -28,6 +28,19 @@ export interface BlocksAbout extends Schema.Component {
   };
 }
 
+export interface BlocksContact extends Schema.Component {
+  collectionName: 'components_blocks_contacts';
+  info: {
+    displayName: 'Contact';
+  };
+  attributes: {
+    description: Attribute.RichText;
+    heading: Attribute.String;
+    hubspotFormId: Attribute.String;
+    successMessage: Attribute.String;
+  };
+}
+
 export interface BlocksHero extends Schema.Component {
   collectionName: 'components_blocks_heroes';
   info: {
@@ -164,6 +177,7 @@ declare module '@strapi/types' {
     export interface Components {
       'about.tech-category': AboutTechCategory;
       'blocks.about': BlocksAbout;
+      'blocks.contact': BlocksContact;
       'blocks.hero': BlocksHero;
       'blocks.project': BlocksProject;
       'layout.banner': LayoutBanner;

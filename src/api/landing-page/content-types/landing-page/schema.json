@@ -4,7 +4,8 @@
   "info": {
     "singularName": "landing-page",
     "pluralName": "landing-pages",
-    "displayName": "Landing Page"
+    "displayName": "Landing Page",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -22,7 +23,8 @@
       "components": [
         "blocks.hero",
         "blocks.about",
-        "blocks.project"
+        "blocks.project",
+        "blocks.contact"
       ]
     }
   }

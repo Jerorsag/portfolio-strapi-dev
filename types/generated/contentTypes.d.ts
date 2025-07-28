@@ -400,6 +400,7 @@ export interface ApiGlobalGlobal extends Schema.SingleType {
 export interface ApiLandingPageLandingPage extends Schema.SingleType {
   collectionName: 'landing_pages';
   info: {
+    description: '';
     displayName: 'Landing Page';
     pluralName: 'landing-pages';
     singularName: 'landing-page';
@@ -409,7 +410,7 @@ export interface ApiLandingPageLandingPage extends Schema.SingleType {
   };
   attributes: {
     blocks: Attribute.DynamicZone<
-      ['blocks.hero', 'blocks.about', 'blocks.project']
+      ['blocks.hero', 'blocks.about', 'blocks.project', 'blocks.contact']
     >;
     createdAt: Attribute.DateTime;
     createdBy: Attribute.Relation<

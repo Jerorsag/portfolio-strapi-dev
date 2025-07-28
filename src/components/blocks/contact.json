@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_blocks_contacts",
+  "info": {
+    "displayName": "Contact"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "hubspotFormId": {
+      "type": "string"
+    },
+    "successMessage": {
+      "type": "string"
+    }
+  }
+}
