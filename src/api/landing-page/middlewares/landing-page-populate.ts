@@ -5,25 +5,36 @@
 import { Strapi } from '@strapi/strapi';
 
 const populate = {
-    blocks: {
-      on: {
-        'blocks.hero': {
-          populate: {
-            links: true,
-            image: {
-              fields: ['alternativeText', 'url'],
+  blocks: {
+    on: {
+      'blocks.hero': {
+        populate: {
+          links: true,
+          image: {
+            fields: ['alternativeText', 'url'],
+          },
+        },
+      },
+      'blocks.about': {
+        populate: {
+          softSkills: true,
+          techCategories: {
+            populate: {
+              technologies: {
+                populate: {
+                  icon: {
+                    fields: ['alternativeText', 'url'],
+                  },
+                },
+              },
             },
           },
         },
-        'blocks.about': {
-          populate: {
-            softSkills: true,
-          },
-        },
-        'blocks.project': true,
       },
+      'blocks.project': true,
     },
-  }
+  },
+}
 
 export default (config, { strapi }: { strapi: Strapi }) => {
   // Add your own logic here.
