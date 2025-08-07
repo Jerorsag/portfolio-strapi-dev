@@ -9,22 +9,18 @@
     "heading": {
       "type": "string"
     },
-    "subtitle": {
-      "type": "string"
-    },
-    "description": {
-      "type": "richtext"
-    },
     "softSkills": {
       "type": "component",
       "repeatable": true,
       "component": "shared.tag"
     },
-    "techCategories": {
-      "displayName": "Tech Category",
+    "technologies": {
       "type": "component",
       "repeatable": true,
-      "component": "about.tech-category"
+      "component": "project.stack-item"
+    },
+    "description": {
+      "type": "text"
     }
   }
 }

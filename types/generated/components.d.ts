@@ -20,11 +20,10 @@ export interface BlocksAbout extends Schema.Component {
     displayName: 'About';
   };
   attributes: {
-    description: Attribute.RichText;
+    description: Attribute.Text;
     heading: Attribute.String;
     softSkills: Attribute.Component<'shared.tag', true>;
-    subtitle: Attribute.String;
-    techCategories: Attribute.Component<'about.tech-category', true>;
+    technologies: Attribute.Component<'project.stack-item', true>;
   };
 }
 
@@ -48,9 +47,8 @@ export interface BlocksHero extends Schema.Component {
     displayName: 'Hero';
   };
   attributes: {
-    description: Attribute.RichText;
+    description: Attribute.Text;
     heading: Attribute.String;
-    image: Attribute.Media<'images'>;
     links: Attribute.Component<'shared.link', true>;
   };
 }
@@ -144,7 +142,7 @@ export interface SharedLink extends Schema.Component {
     isButtonLink: Attribute.Boolean & Attribute.DefaultTo<false>;
     isExternal: Attribute.Boolean & Attribute.DefaultTo<false>;
     label: Attribute.String;
-    type: Attribute.Enumeration<['PRIMARY', 'SECONDARY']>;
+    type: Attribute.Enumeration<['PRIMARY', 'SECONDARY', 'GITHUB', 'WEBSITE']>;
   };
 }
 

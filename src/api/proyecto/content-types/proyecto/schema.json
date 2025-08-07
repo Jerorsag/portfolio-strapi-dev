@@ -25,7 +25,7 @@
     },
     "image": {
       "type": "component",
-      "repeatable": true,
+      "repeatable": false,
       "component": "project.featured-image"
     },
     "destacado": {

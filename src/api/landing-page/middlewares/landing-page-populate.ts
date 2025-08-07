@@ -10,22 +10,15 @@ const populate = {
       'blocks.hero': {
         populate: {
           links: true,
-          image: {
-            fields: ['alternativeText', 'url'],
-          },
-        },
+        }
       },
       'blocks.about': {
         populate: {
           softSkills: true,
-          techCategories: {
+          technologies: {
             populate: {
-              technologies: {
-                populate: {
-                  icon: {
-                    fields: ['alternativeText', 'url'],
-                  },
-                },
+              icon: {
+                fields: ['alternativeText', 'url'],
               },
             },
           },

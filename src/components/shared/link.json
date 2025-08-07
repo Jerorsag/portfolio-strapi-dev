@@ -24,7 +24,9 @@
       "type": "enumeration",
       "enum": [
         "PRIMARY",
-        "SECONDARY"
+        "SECONDARY",
+        "GITHUB",
+        "WEBSITE"
       ]
     }
   }

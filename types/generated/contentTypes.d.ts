@@ -453,7 +453,7 @@ export interface ApiProyectoProyecto extends Schema.CollectionType {
       Attribute.Private;
     description: Attribute.RichText;
     destacado: Attribute.Boolean & Attribute.DefaultTo<false>;
-    image: Attribute.Component<'project.featured-image', true>;
+    image: Attribute.Component<'project.featured-image'>;
     linksProject: Attribute.Component<'shared.link', true>;
     ordenDisplay: Attribute.Integer;
     publishedAt: Attribute.DateTime;

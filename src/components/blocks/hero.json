@@ -9,21 +9,13 @@
     "heading": {
       "type": "string"
     },
-    "description": {
-      "type": "richtext"
-    },
     "links": {
       "type": "component",
       "repeatable": true,
       "component": "shared.link"
     },
-    "image": {
-      "type": "media",
-      "multiple": false,
-      "required": false,
-      "allowedTypes": [
-        "images"
-      ]
+    "description": {
+      "type": "text"
     }
   }
 }
