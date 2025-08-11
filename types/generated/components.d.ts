@@ -30,12 +30,14 @@ export interface BlocksAbout extends Schema.Component {
 export interface BlocksContact extends Schema.Component {
   collectionName: 'components_blocks_contacts';
   info: {
+    description: '';
     displayName: 'Contact';
   };
   attributes: {
     description: Attribute.RichText;
     heading: Attribute.String;
     hubspotFormId: Attribute.String;
+    portalId: Attribute.String;
     successMessage: Attribute.String;
   };
 }
@@ -60,7 +62,6 @@ export interface BlocksProject extends Schema.Component {
     displayName: 'Project';
   };
   attributes: {
-    description: Attribute.RichText;
     heading: Attribute.String;
     proyectos: Attribute.Relation<
       'blocks.project',

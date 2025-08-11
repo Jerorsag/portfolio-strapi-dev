@@ -9,9 +9,6 @@
     "heading": {
       "type": "string"
     },
-    "description": {
-      "type": "richtext"
-    },
     "proyectos": {
       "type": "relation",
       "relation": "oneToMany",
