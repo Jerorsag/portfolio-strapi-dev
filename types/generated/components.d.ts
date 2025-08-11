@@ -34,7 +34,7 @@ export interface BlocksContact extends Schema.Component {
     displayName: 'Contact';
   };
   attributes: {
-    description: Attribute.RichText;
+    description: Attribute.Text;
     heading: Attribute.String;
     hubspotFormId: Attribute.String;
     portalId: Attribute.String;

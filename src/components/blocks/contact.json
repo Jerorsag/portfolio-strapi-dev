@@ -9,9 +9,6 @@
     "heading": {
       "type": "string"
     },
-    "description": {
-      "type": "richtext"
-    },
     "hubspotFormId": {
       "type": "string"
     },
@@ -20,6 +17,9 @@
     },
     "successMessage": {
       "type": "string"
+    },
+    "description": {
+      "type": "text"
     }
   }
 }
